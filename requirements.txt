@@ -1,0 +1,9 @@
+# Runtime dependencies
+requests>=2.31.0          # HTTP client (recommended in coursework brief)
+beautifulsoup4>=4.12.0    # HTML parsing (recommended in coursework brief)
+lxml>=4.9.0               # Fast HTML parser backend for BeautifulSoup
+
+# Development / testing
+pytest>=7.4.0             # Test framework
+pytest-cov>=4.1.0         # Coverage reporting
+responses>=0.24.0         # Mock HTTP responses for crawler tests
