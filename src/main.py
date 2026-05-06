@@ -34,7 +34,7 @@ logging.basicConfig(
 
 DEFAULT_SEED = "https://quotes.toscrape.com/"
 DEFAULT_INDEX_PATH = Path("data/index.json")
-
+DEFAULT_MAX_PAGES = 100  # comfortable cap for quotes.toscrape.com
 
 class SearchShell(cmd.Cmd):
     """Interactive shell for the search engine."""
@@ -50,7 +50,7 @@ class SearchShell(cmd.Cmd):
         seed_url: str = DEFAULT_SEED,
         index_path: Path = DEFAULT_INDEX_PATH,
         *,
-        max_pages: int = 1000,
+        max_pages: int = DEFAULT_MAX_PAGES,
     ):
         super().__init__()
         self.seed_url = seed_url
