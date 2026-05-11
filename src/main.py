@@ -34,7 +34,7 @@ logging.basicConfig(
 
 DEFAULT_SEED = "https://quotes.toscrape.com/"
 DEFAULT_INDEX_PATH = Path("data/index.json")
-DEFAULT_MAX_PAGES = 100  # comfortable cap for quotes.toscrape.com
+DEFAULT_MAX_PAGES = 1000
 
 class SearchShell(cmd.Cmd):
     """Interactive shell for the search engine."""
